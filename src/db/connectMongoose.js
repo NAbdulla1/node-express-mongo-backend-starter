@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-
-const logger = require("../logger");
+const logger = require("../services/loggerService");
 
 const DB_URL = process.env.MONGO_DB_URL;
 

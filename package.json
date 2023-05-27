@@ -1,5 +1,5 @@
 {
-  "name": "lws_mongo-mongoose_crud",
+  "name": "node-express-mongo-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

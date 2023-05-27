@@ -1,15 +1,15 @@
 require("dotenv").config();
-const express = require("express");
 
-const logger = require("./logger");
-const connectMongoose = require("./db/connectMongoose");
-const router = require("./routes");
+const express = require("express");
+const logger = require("./src/services/loggerService");
+const connectMongoose = require("./src/db/connectMongoose");
+const router = require("./src/routes");
 
 app = express();
-app.use(express.json());
 
 connectMongoose();
 
+app.use(express.json());
 app.use(router);
 
 app.listen(3000, () => {
